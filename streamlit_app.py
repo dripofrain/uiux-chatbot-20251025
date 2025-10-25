@@ -4,7 +4,7 @@ import streamlit as st
 from openai import OpenAI
 from typing import List, Dict, Any
 
-st.set_page_config(page_title="💬 Chatbot", page_icon="💬")
+st.set_page_config(page_title="💬 Chatbot Ver1.0", page_icon="💬")
 
 # ---- Sidebar: 설정 ----
 with st.sidebar:
