@@ -4,7 +4,11 @@ import streamlit as st
 from openai import OpenAI
 from typing import List, Dict, Any
 
-st.set_page_config(page_title="💬 Chatbot Ver1.0", page_icon="💬")
+# 버전 정보
+_VERSION = "1.0.0"
+_TITLE = "💬 Chatbot "+_VERSION
+
+st.set_page_config(page_title=_TITLE, page_icon="💬")
 
 # ---- Sidebar: 설정 ----
 with st.sidebar:
@@ -37,7 +41,7 @@ with st.sidebar:
     )
 
 # ---- 헤더 ----
-st.title("💬 Chatbot")
+st.title(_TITLE)
 st.write(
     "간단한 Streamlit + OpenAI 챗봇 예제입니다. "
     "API 키는 사이드바에서 입력하거나 `secrets.toml`에 저장할 수 있어요."
